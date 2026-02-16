@@ -1,0 +1,27 @@
+.navbar {
+  height: 50px;
+  width: 100%;
+  color: whitesmoke;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+.navbar img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+.navbar ul {
+  display: flex;
+  gap: 50px;
+}
+.navbar li {
+  cursor: pointer;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+.navbar p {
+  cursor: pointer;
+}
