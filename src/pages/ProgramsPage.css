@@ -1,0 +1,21 @@
+.main-content {
+  background-color: whitesmoke;
+  color: black;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.program {
+  border-bottom: 1px black solid;
+}
+.program span {
+  cursor: pointer;
+}
+.program h3 {
+  letter-spacing: 1px;
+}
+.program h3:hover {
+  color: green;
+  cursor: pointer;
+}

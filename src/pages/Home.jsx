@@ -1,4 +1,4 @@
-import '../components/HomePage.css';
+import '../pages/HomePage.css';
 import headerVideo from '../assets/backgroundMedApp.mp4';
 
 function HomePage() {

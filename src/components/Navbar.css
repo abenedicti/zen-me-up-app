@@ -25,3 +25,7 @@
 .navbar p {
   cursor: pointer;
 }
+.navbar a {
+  text-decoration: none;
+  color: whitesmoke;
+}
