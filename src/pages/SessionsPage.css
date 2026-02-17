@@ -1,0 +1,30 @@
+.session-content p {
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 30px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
+.session-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.session-content p:first-child {
+  background: url('../assets/bgSession1.jpg') center top;
+}
+.session-content p:nth-child(2) {
+  background: url('../assets/bgSession2.jpg') center;
+}
+.session-content p:nth-child(3) {
+  background: url('../assets/bgSession3.jpg') center;
+}
+.session-content p:nth-child(4) {
+  background: url('../assets/bgSession4.jpg') center;
+}
+.session-content p:last-child {
+  background: url('../assets/bgSession5.jpg') center/cover;
+}
