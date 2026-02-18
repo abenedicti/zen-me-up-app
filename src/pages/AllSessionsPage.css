@@ -1,0 +1,21 @@
+.sessions-list {
+  height: 60vh;
+}
+.session-card h2 {
+  font-weight: lighter;
+  font-size: 1.2rem;
+  border: 1px rgb(245, 235, 235) solid;
+}
+.session-card span {
+  cursor: pointer;
+}
+.session-card a {
+  text-decoration: none;
+  color: green;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+.session-card a:hover {
+  transform: scale(1.1);
+  color: greenyellow;
+}

@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import VideoPlayer from '../components/VideoPlayer';
 import SessionInfo from '../components/SessionInfo';
 import SessionReflection from '../components/SessionReflection';
+
 function SessionsDetails() {
   const { sessionId } = useParams();
   const [sessionDetails, setSessionDetails] = useState([]);

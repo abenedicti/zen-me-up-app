@@ -3,7 +3,8 @@ import Navbar from './components/Navbar.jsx';
 import HomePage from './pages/Home.jsx';
 import Programs from './pages/ProgramsPage';
 import Sessions from './pages/SessionsPage';
-import SessionDetailsPage from './pages/SessionDetailsPage';
+import SessionDetails from './pages/SessionDetailsPage';
+import AllSessions from './pages/AllSessionsPage.jsx';
 import './App.css';
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/programs" element={<Programs />} />
           <Route path="/programs/:programId/sessions" element={<Sessions />} />
-          <Route path="/sessions/:sessionId" element={<SessionDetailsPage />} />
+          <Route path="/sessions" element={<AllSessions />} />
+          <Route path="/sessions/:sessionId" element={<SessionDetails />} />
         </Routes>
       </Router>
     </div>
