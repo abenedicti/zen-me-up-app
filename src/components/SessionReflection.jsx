@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import '../components/SessionReflection.css';
 
 function SessionReflection({ sessionId, userReflection }) {
   const [reflection, setReflection] = useState(userReflection || '');
@@ -24,7 +25,7 @@ function SessionReflection({ sessionId, userReflection }) {
   };
 
   return (
-    <div>
+    <div className="reflection-content">
       <h3>Your feeling</h3>
       {editing ? (
         <>
@@ -32,18 +33,23 @@ function SessionReflection({ sessionId, userReflection }) {
             value={reflection}
             onChange={(e) => setReflection(e.target.value)}
             rows={4}
-            cols={50}
+            cols={30}
           />
           <br />
           <button onClick={handleSave}>Save</button>
+          {/* make the delete btn appear when start tapping */}
+          {reflection.trim() !== '' && (
+            <button onClick={handleDelete}>Delete</button>
+          )}
+          {/* make the cancel btn appear when empty textarea */}
+          {reflection.trim() === '' && (
+            <button onClick={() => setEditing(false)}>Cancel</button>
+          )}
         </>
       ) : (
         <p>{reflection || 'Write how do you feel after the meditation'}</p>
       )}
-      <button onClick={() => setEditing(!editing)}>
-        {editing ? 'Cancel' : 'Edit'}
-      </button>
-      <button onClick={handleDelete}>Delete</button>
+      {!editing && <button onClick={() => setEditing(true)}>Edit</button>}
     </div>
   );
 }

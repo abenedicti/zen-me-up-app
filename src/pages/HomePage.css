@@ -1,7 +1,8 @@
 .header video {
   width: 100%;
-  box-shadow: 5px 10px 10px rgb(68, 45, 23);
+  box-shadow: 5px 5px 10px rgb(6, 61, 68);
 }
+
 .home-content {
   background: black;
   position: relative;
@@ -60,4 +61,12 @@ h1 {
   top: 30%;
   left: 20%;
   animation-delay: 1s;
+}
+.anim-home {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
 }

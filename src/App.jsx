@@ -5,6 +5,7 @@ import Programs from './pages/ProgramsPage';
 import Sessions from './pages/SessionsPage';
 import SessionDetails from './pages/SessionDetailsPage';
 import AllSessions from './pages/AllSessionsPage.jsx';
+import Search from './components/Search.jsx';
 import './App.css';
 
 function App() {

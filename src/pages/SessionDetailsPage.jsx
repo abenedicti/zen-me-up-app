@@ -4,10 +4,11 @@ import axios from 'axios';
 import VideoPlayer from '../components/VideoPlayer';
 import SessionInfo from '../components/SessionInfo';
 import SessionReflection from '../components/SessionReflection';
+import '../pages/SessionDetailsPage.css';
 
 function SessionsDetails() {
   const { sessionId } = useParams();
-  const [sessionDetails, setSessionDetails] = useState([]);
+  const [sessionDetails, setSessionDetails] = useState(null);
 
   useEffect(() => {
     axios
@@ -17,8 +18,9 @@ function SessionsDetails() {
   }, [sessionId]);
   if (!sessionDetails) return <p>Loading...</p>;
   return (
-    <div>
-      <VideoPlayer url={sessionDetails.videoUrl} />
+    <div className="page-content">
+      <VideoPlayer session={sessionDetails} />
+
       <SessionInfo
         title={sessionDetails.title}
         author={sessionDetails.author}

@@ -1,5 +1,7 @@
 import '../pages/HomePage.css';
-import headerVideo from '../assets/backgroundMedApp.mp4';
+import headerVideo from '../assets/stone-bg.mp4';
+import Lottie from 'lottie-react';
+import animation from '../assets/MeditatingMonkey.json';
 
 function HomePage() {
   return (
@@ -15,6 +17,9 @@ function HomePage() {
         <p className="word w3">Anxiety</p>
         <p className="word w4">Focus</p>
         <p className="word w5">Live mindfully</p>
+        <div className="anim-home">
+          <Lottie animationData={animation} loop={true} />
+        </div>
       </div>
     </>
   );

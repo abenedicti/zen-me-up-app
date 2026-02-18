@@ -1,10 +1,11 @@
+import '../components/SessionInfo.css';
 function SessionInfo({ title, author, duration, description }) {
   return (
-    <div>
+    <div className="session-infos">
       <h2>{title}</h2>
       <p>Author : {author}</p>
       <p>Duration : {duration} min</p>
-      <p>{description}</p>
+      <p className="duration-style">{description}</p>
     </div>
   );
 }

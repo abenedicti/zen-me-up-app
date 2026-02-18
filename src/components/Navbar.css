@@ -9,8 +9,8 @@
   padding: 0 25px;
 }
 .navbar img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-radius: 50px;
 }
 .navbar ul {
@@ -19,7 +19,7 @@
 }
 .navbar li {
   cursor: pointer;
-  font-weight: lighter;
+  font-weight: bold;
   font-size: 1rem;
 }
 .navbar p {
