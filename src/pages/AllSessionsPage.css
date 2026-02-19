@@ -1,5 +1,5 @@
 .sessions-list {
-  height: 60vh;
+  min-height: 60vh;
 }
 .all-sessions h2 {
   font-family: 'Caveat Brush', cursive;

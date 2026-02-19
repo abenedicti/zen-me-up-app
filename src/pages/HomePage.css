@@ -5,13 +5,15 @@
 .home-content {
   background: black;
   position: relative;
-  height: 40vh;
+  min-height: 40vh;
 }
 h1 {
   background: black;
   margin-top: -35px;
   color: whitesmoke;
   font-family: 'Finger Paint', sans-serif;
+  position: absolute;
+  z-index: 1;
 }
 .home-content h2 {
   color: whitesmoke;

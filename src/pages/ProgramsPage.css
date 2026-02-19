@@ -3,7 +3,7 @@
     center/cover;
   filter: brightness(0.8);
   color: black;
-  height: 60vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   gap: 50px;
