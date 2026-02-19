@@ -5,10 +5,10 @@ import '../components/SessionReflection.css';
 function SessionReflection({ sessionId, userReflection }) {
   const [reflection, setReflection] = useState(userReflection || '');
   const [editing, setEditing] = useState(false);
-
+  const API_URL = import.meta.env.VITE_API_URL;
   const handleSave = () => {
     axios
-      .patch(`http://localhost:5003/sessions/${sessionId}`, {
+      .patch(`${API_URL}/sessions/${sessionId}`, {
         userReflection: reflection,
       })
       .then(() => setEditing(false))
@@ -18,7 +18,7 @@ function SessionReflection({ sessionId, userReflection }) {
   const handleDelete = () => {
     setReflection('');
     axios
-      .patch(`http://localhost:5003/sessions/${sessionId}`, {
+      .patch(`${API_URL}/sessions/sessions/${sessionId}`, {
         userReflection: '',
       })
       .catch((err) => console.error(err));

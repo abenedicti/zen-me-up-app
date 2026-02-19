@@ -9,10 +9,10 @@ function Search() {
   const [filteredResults, setFilteredResults] = useState([]);
   // to show the input after clicking on the search icon
   const [showInput, setShowInput] = useState(false);
-
+  const API_URL = import.meta.env.VITE_API_URL;
   useEffect(() => {
     axios
-      .get('http://localhost:5003/sessions')
+      .get(`${API_URL}/sessions`)
       .then((response) => setDatas(response.data))
       .catch((error) => console.log(error));
   }, []);

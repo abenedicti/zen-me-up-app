@@ -10,9 +10,10 @@ function AllSessions() {
   const [selectedDuration, setSelectedDuration] = useState('3');
   const [loading, setLoading] = useState(true);
 
+  const API_URL = import.meta.env.VITE_API_URL;
   useEffect(() => {
     axios
-      .get('http://localhost:5003/sessions')
+      .get(`${API_URL}/sessions`)
       .then((response) => {
         setSessions(response.data);
         setLoading(false);

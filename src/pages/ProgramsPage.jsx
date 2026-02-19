@@ -12,10 +12,10 @@ function Programs() {
   const toggleDescription = (programId) => {
     setOpenDescription(openDescription === programId ? null : programId);
   };
-
+  const API_URL = import.meta.env.VITE_API_URL;
   useEffect(() => {
     axios
-      .get('http://localhost:5003/programs')
+      .get(`${API_URL}/programs`)
       .then((response) => {
         setPrograms(response.data);
         setLoading(false);

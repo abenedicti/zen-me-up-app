@@ -8,10 +8,10 @@ function Sessions() {
   const [sessions, setSessions] = useState([]);
   const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
-
+  const API_URL = import.meta.env.VITE_API_URL;
   useEffect(() => {
     axios
-      .get(`http://localhost:5003/sessions?programId=${programId}`)
+      .get(`${API_URL}/sessions?programId=${programId}`)
       .then((response) => {
         setSessions(response.data);
         setLoading(false);

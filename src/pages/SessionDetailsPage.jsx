@@ -11,10 +11,10 @@ import monkey from '../assets/MeditatingMonkey.json';
 function SessionsDetails() {
   const { sessionId } = useParams();
   const [sessionDetails, setSessionDetails] = useState(null);
-
+  const API_URL = import.meta.env.VITE_API_URL;
   useEffect(() => {
     axios
-      .get(`http://localhost:5003/sessions/${sessionId}`)
+      .get(`${API_URL}/sessions/${sessionId}`)
       .then((response) => setSessionDetails(response.data))
       .catch((error) => console.log(error));
   }, [sessionId]);
