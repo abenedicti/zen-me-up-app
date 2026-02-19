@@ -8,9 +8,9 @@
   min-height: 40vh;
 }
 h1 {
-  background: black;
-  margin-top: -35px;
+  margin-top: -65px;
   color: whitesmoke;
+  letter-spacing: 2px;
   font-family: 'Finger Paint', sans-serif;
 }
 .home-content h2 {
