@@ -1,11 +1,7 @@
 .page-content {
   height: 80vh;
-  background: rgb(112, 131, 160);
-  background: linear-gradient(
-    344deg,
-    rgb(112, 131, 160) 32%,
-    rgba(3, 5, 38, 1) 76%
-  );
+  background: rgb(19, 17, 17);
+  color: whitesmoke;
   padding: 10px;
 }
 .page-content textarea {

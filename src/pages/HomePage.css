@@ -25,7 +25,7 @@ h1 {
   position: absolute;
   font-weight: bold;
   opacity: 0;
-  animation: fadeFloat 1s ease forwards;
+  animation: fadeFloat 10s ease forwards;
 }
 @keyframes fadeFloat {
   from {
@@ -41,32 +41,37 @@ h1 {
   top: 10%;
   left: 10%;
   animation-delay: 0.2s;
+  color: #c2e7d9;
 }
 .w2 {
   top: 15%;
   right: 15%;
   animation-delay: 0.4s;
+  color: #f1dfb6;
 }
 .w3 {
   top: 20%;
   left: 30%;
   animation-delay: 0.6s;
+  color: #91c3af;
 }
 .w4 {
   top: 25%;
   right: 10%;
   animation-delay: 0.8s;
+  color: #aec6dc;
 }
 .w5 {
   top: 30%;
   left: 20%;
-  animation-delay: 1s;
+  animation-delay: 0.9s;
+  color: whitesmoke;
 }
 .anim-home {
   position: absolute;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
 }

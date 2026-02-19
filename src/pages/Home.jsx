@@ -1,7 +1,7 @@
 import '../pages/HomePage.css';
 import headerVideo from '../assets/stone-bg.mp4';
 import Lottie from 'lottie-react';
-import animation from '../assets/MeditatingMonkey.json';
+import animation from '../assets/Meditation.json';
 
 function HomePage() {
   return (

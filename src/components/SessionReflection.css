@@ -1,13 +1,18 @@
 .reflection-content button {
   margin-right: 10px;
+  margin-top: 10px;
   padding: 7px 10px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  background: #141939;
+  background: #c2e7d9;
+  color: black;
 }
 .reflection-content button:hover {
-  background: rgba(2, 6, 65, 0.5);
+  transform: scale(1.1);
+  transition: 0.1s ease-in-out;
+  background: #91c3af;
+  color: whitesmoke;
 }
 .reflection-content {
   margin-top: 40px;
@@ -15,4 +20,7 @@
   flex-direction: column;
   align-items: start;
   text-align: left;
+}
+.reflection-content h3 {
+  color: #f1dfb6;
 }

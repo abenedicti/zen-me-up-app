@@ -9,11 +9,13 @@
   font-size: 1.2rem;
   font-family: 'Caveat Brush', cursive;
   letter-spacing: 2px;
+  color: #f1dfb6;
 }
 .duration-style {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 20px;
-  color: rgb(155, 148, 170);
-  text-shadow: 5px -8px 2px rgb(14, 5, 14);
+  color: #aec6dc;
+  /* text-shadow: 1px 2px 1px #295041; */
+  /* font-weight: bold; */
   margin-top: 20px;
 }
