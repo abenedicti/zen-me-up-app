@@ -1,5 +1,5 @@
 import '../pages/HomePage.css';
-import headerVideo from '../assets/stone-bg.mp4';
+import HomeBg from '../assets/home-bg.mp4';
 import Lottie from 'lottie-react';
 import animation from '../assets/Meditation.json';
 
@@ -7,7 +7,7 @@ function HomePage() {
   return (
     <>
       <div className="header">
-        <video autoPlay muted loop playsInline src={headerVideo}></video>
+        <video autoPlay muted loop playsInline src={HomeBg}></video>
       </div>
       <h1>ZenMeUp</h1>
       <div className="home-content">

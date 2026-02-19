@@ -1,30 +1,73 @@
 .session-content p {
   cursor: pointer;
-  border: 1px solid black;
   border-radius: 20px;
-  padding: 30px;
-  font-size: 1.1rem;
+  padding: 20px;
+  font-size: 0.7rem;
   text-transform: uppercase;
   color: black;
   font-weight: bold;
+  width: 100px;
+}
+.para-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .session-content {
+  background: url('https://res.cloudinary.com/duiastu2q/image/upload/v1771511623/session-bg_v12zcu.png')
+    center/cover;
+  filter: brightness(0.8);
   display: flex;
   flex-direction: column;
+
   gap: 20px;
+  height: 60vh;
 }
 .session-content p:first-child {
-  background: url('../assets/bgSession1.jpg') center top;
+  /* background: url('../assets/bgSession1.jpg') center top; */
+  background: #c2e7d9;
+
+  border-radius: 550px;
 }
 .session-content p:nth-child(2) {
-  background: url('../assets/bgSession2.jpg') center;
+  /* background: url('../assets/bgSession2.jpg') center; */
+  background: #f1dfb6;
 }
 .session-content p:nth-child(3) {
-  background: url('../assets/bgSession3.jpg') center;
+  /* background: url('../assets/bgSession3.jpg') center; */
+  background: #aec6dc;
+  background: linear-gradient(
+    2deg,
+    rgba(174, 198, 220, 0.7) 15%,
+    rgba(174, 198, 220, 0.8) 100%
+  );
 }
 .session-content p:nth-child(4) {
-  background: url('../assets/bgSession4.jpg') center;
+  /* background: url('../assets/bgSession4.jpg') center; */
+  background: #91c3af;
+  background: linear-gradient(
+    2deg,
+    rgba(145, 195, 175, 0.75) 15%,
+    rgba(145, 195, 175, 0.8) 100%
+  );
 }
 .session-content p:last-child {
-  background: url('../assets/bgSession5.jpg') center/cover;
+  /* background: url('../assets/bgSession5.jpg') center/cover; */
+  border-radius: 550px;
+  background: #060807;
+  background: linear-gradient(
+    2deg,
+    rgba(6, 8, 7, 0.75) 15%,
+    rgba(7, 10, 10, 0.8) 100%
+  );
+  color: whitesmoke;
+}
+.session-content h2 {
+  color: #f1dfb6;
+  text-transform: uppercase;
+  font-family: 'Caveat Brush', cursive;
 }

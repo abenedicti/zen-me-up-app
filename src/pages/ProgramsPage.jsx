@@ -7,6 +7,7 @@ function Programs() {
   const [programs, setPrograms] = useState([]);
   const [openDescription, setOpenDescription] = useState(null);
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(true);
 
   const toggleDescription = (programId) => {
     setOpenDescription(openDescription === programId ? null : programId);
@@ -17,6 +18,7 @@ function Programs() {
       .get('http://localhost:5003/programs')
       .then((response) => {
         setPrograms(response.data);
+        setLoading(false);
       })
       .catch((error) => {
         console.log(error);
@@ -25,22 +27,26 @@ function Programs() {
 
   return (
     <div className="main-content">
-      <h2>Programmes</h2>
-      <div className="program-content">
-        {programs.map((program) => (
-          <div className="program" key={program.id}>
-            <h3 onClick={() => navigate(`/programs/${program.id}/sessions`)}>
-              {program.title}
-            </h3>
+      <h2>All Programs</h2>
+      {loading ? (
+        <div className="spinner">Loading...</div>
+      ) : (
+        <div className="program-content">
+          {programs.map((program) => (
+            <div className="program" key={program.id}>
+              <h3 onClick={() => navigate(`/programs/${program.id}/sessions`)}>
+                {program.title}
+              </h3>
 
-            <span onClick={() => toggleDescription(program.id)}>
-              {openDescription === program.id ? '▲' : '▼'}
-            </span>
+              <span onClick={() => toggleDescription(program.id)}>
+                {openDescription === program.id ? '▲' : '▼'}
+              </span>
 
-            {openDescription === program.id && <p>{program.description}</p>}
-          </div>
-        ))}
-      </div>
+              {openDescription === program.id && <p>{program.description}</p>}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

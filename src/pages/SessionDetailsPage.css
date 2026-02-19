@@ -1,6 +1,6 @@
 .page-content {
   height: 80vh;
-  background: rgb(19, 17, 17);
+  background: #33375260;
   color: whitesmoke;
   padding: 10px;
 }
@@ -23,4 +23,15 @@
   outline: none;
   box-shadow: 0 0 2px rgba(35, 2, 112, 0.5);
   color: rgba(2, 6, 65, 0.5);
+}
+.player-bg {
+  border: 1px solid whitesmoke;
+}
+.monkey {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
 }

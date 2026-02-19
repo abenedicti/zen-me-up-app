@@ -5,6 +5,8 @@ import VideoPlayer from '../components/VideoPlayer';
 import SessionInfo from '../components/SessionInfo';
 import SessionReflection from '../components/SessionReflection';
 import '../pages/SessionDetailsPage.css';
+import Lottie from 'lottie-react';
+import monkey from '../assets/MeditatingMonkey.json';
 
 function SessionsDetails() {
   const { sessionId } = useParams();
@@ -31,6 +33,9 @@ function SessionsDetails() {
         sessionId={sessionDetails.id}
         userReflection={sessionDetails.userReflection}
       />
+      <div className="monkey">
+        <Lottie animationData={monkey} loop={true} />
+      </div>
     </div>
   );
 }

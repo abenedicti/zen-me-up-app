@@ -1,13 +1,24 @@
 .main-content {
-  background-color: whitesmoke;
+  background: url('https://res.cloudinary.com/duiastu2q/image/upload/v1771511624/program-bg_mbfe2o.jpg')
+    center/cover;
+  filter: brightness(0.8);
   color: black;
   height: 60vh;
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
+
+.main-content h2 {
+  font-family: 'Caveat Brush', cursive;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  color: #f1dfb6;
+}
 .program {
-  border-bottom: 1px black solid;
+  border-top: 1px black solid;
+  border-radius: 0 50px 50px 0;
+  padding-top: 8px;
 }
 .program span {
   cursor: pointer;
@@ -15,7 +26,15 @@
 .program h3 {
   letter-spacing: 1px;
 }
+
 .program h3:hover {
-  color: green;
+  color: #aec6dc;
   cursor: pointer;
+}
+
+.program:nth-child(4) {
+  color: #f6f4f2;
+}
+.program:last-child {
+  color: #e97463;
 }
