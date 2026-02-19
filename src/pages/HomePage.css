@@ -12,6 +12,7 @@ h1 {
   color: whitesmoke;
   letter-spacing: 2px;
   font-family: 'Finger Paint', sans-serif;
+  z-index: 1;
 }
 .home-content h2 {
   color: whitesmoke;
