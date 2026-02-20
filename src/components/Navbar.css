@@ -1,6 +1,7 @@
 .navbar {
   height: 50px;
   width: 100%;
+  max-width: 390px;
   color: whitesmoke;
   background: black;
   display: flex;
@@ -8,6 +9,7 @@
   align-items: center;
   padding: 0 25px;
   border-bottom: 1px solid whitesmoke;
+  box-sizing: border-box;
 }
 .navbar img {
   width: 25px;
@@ -17,7 +19,7 @@
 }
 .navbar ul {
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
 .navbar li {
   cursor: pointer;

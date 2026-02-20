@@ -26,7 +26,7 @@ function SessionReflection({ sessionId, userReflection }) {
 
   return (
     <div className="reflection-content">
-      <h3>Your feeling</h3>
+      <h3>Take a moment to write your thoughts</h3>
       {editing ? (
         <>
           <textarea
@@ -47,7 +47,7 @@ function SessionReflection({ sessionId, userReflection }) {
           )}
         </>
       ) : (
-        <p>{reflection || 'Write how do you feel after the meditation'}</p>
+        <p>{reflection || 'Write your post-meditation notes below'}</p>
       )}
       {!editing && <button onClick={() => setEditing(true)}>Edit</button>}
     </div>

@@ -21,6 +21,9 @@
   align-items: start;
   text-align: left;
 }
+.reflection-content p {
+  color: black;
+}
 .reflection-content h3 {
   color: #f1dfb6;
 }

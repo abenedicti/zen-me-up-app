@@ -7,12 +7,14 @@ import SessionDetails from './pages/SessionDetailsPage';
 import AllSessions from './pages/AllSessionsPage.jsx';
 import Footer from './components/Footer.jsx';
 import NotFoundPage from './pages/NotFoundPage.jsx';
+import MobileLayout from './components/MobileLayout';
 import './App.css';
 
 function App() {
   return (
     <div className="app">
       <Router>
+        {/* <MobileLayout> */}
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -23,6 +25,7 @@ function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <Footer />
+        {/* </MobileLayout> */}
       </Router>
     </div>
   );

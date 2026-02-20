@@ -10,7 +10,7 @@
 
 .main-content h2 {
   font-family: 'Caveat Brush', cursive;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   letter-spacing: 2px;
   color: #f1dfb6;
 }
@@ -30,13 +30,13 @@
   color: #aec6dc;
   cursor: pointer;
 }
-.program p:nth-child(3) {
-  color: #f6f4f2;
-}
 
 .program:nth-child(4) {
   color: #f6f4f2;
 }
 .program:last-child {
   color: #e97463;
+}
+.program p {
+  font-weight: bold;
 }
