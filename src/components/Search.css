@@ -12,6 +12,7 @@
   max-height: 200px;
   overflow-y: auto;
   z-index: 10;
+  overflow-x: hidden;
 }
 
 .search-result {
@@ -19,10 +20,11 @@
   padding: 5px 10px;
   text-decoration: none;
   color: black;
+  font-size: 0.8rem;
 }
 
 .search-result:hover {
-  background-color: #f0f0f0;
+  color: #f1dfb6;
 }
 .search-container input {
   width: 80px;

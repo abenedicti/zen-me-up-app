@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../pages/ProgramsPage.css';
+import { PropagateLoader } from 'react-spinners';
 
 function Programs() {
   const [programs, setPrograms] = useState([]);
@@ -29,7 +30,10 @@ function Programs() {
     <div className="main-content">
       <h2>All Programs</h2>
       {loading ? (
-        <div className="spinner">Loading...</div>
+        <div className="spinner">
+          {' '}
+          <PropagateLoader />
+        </div>
       ) : (
         <div className="program-content">
           {programs.map((program) => (

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../pages/SessionsPage.css';
+import { PropagateLoader } from 'react-spinners';
 
 function Sessions() {
   const { programId } = useParams();
@@ -16,16 +17,17 @@ function Sessions() {
         setSessions(response.data);
         setLoading(false);
       })
-
       .catch((error) => console.log(error));
   }, [programId]);
   return (
-    <div>
+    <div className="programs-session-content">
       {loading ? (
-        <div className="spinner">Loading...</div>
+        <div className="spinner">
+          <PropagateLoader />
+        </div>
       ) : (
         <div className="session-content">
-          <h2>All sessions</h2>
+          <h2>Program's session</h2>
           <div className="para-content">
             {sessions.map((session) => (
               <p

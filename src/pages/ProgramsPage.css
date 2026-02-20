@@ -3,15 +3,14 @@
     center/cover;
   filter: brightness(0.8);
   color: black;
-  min-height: 60vh;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  flex: 1;
 }
 
 .main-content h2 {
   font-family: 'Caveat Brush', cursive;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   letter-spacing: 2px;
   color: #f1dfb6;
 }
@@ -30,6 +29,9 @@
 .program h3:hover {
   color: #aec6dc;
   cursor: pointer;
+}
+.program p:nth-child(3) {
+  color: #f6f4f2;
 }
 
 .program:nth-child(4) {

@@ -1,10 +1,13 @@
 .sessions-list {
-  min-height: 60vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
 }
 .all-sessions h2 {
   font-family: 'Caveat Brush', cursive;
-  font-size: 1.8rem;
+  font-size: 3rem;
   letter-spacing: 2px;
+  margin-top: 60px;
 }
 .session-card h3 {
   font-weight: lighter;
@@ -28,13 +31,17 @@
   font-weight: bold;
 }
 .all-sessions {
-  height: 60vh;
-  background: url('https://res.cloudinary.com/duiastu2q/image/upload/v1771427950/43905263-spirituality-8769161_640_no2msv.jpg')
-    center/cover;
+  flex: 1;
+  background: url('../assets/bg.png') center/cover;
   filter: brightness(0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .filter-bar select {
-  background: #f1dfb6;
+  background: #f1dfb6ac;
+  padding: 8px;
+  border-radius: 10px;
   border: none;
   color: black;
 }
@@ -46,4 +53,12 @@
 }
 .session-details p {
   color: rgb(18, 16, 16);
+}
+.filter-bar {
+  margin-bottom: 60px;
+}
+.session-card {
+  border-radius: 50px;
+  background: rgba(245, 245, 245, 0.814);
+  margin: 20px 0;
 }

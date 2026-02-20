@@ -1,0 +1,13 @@
+.footer {
+  margin-top: auto;
+  padding: 10px;
+  background-color: #000000;
+  border-top: 1px solid whitesmoke;
+  color: white;
+  text-align: center;
+}
+.footer a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #f1dfb6;
+}

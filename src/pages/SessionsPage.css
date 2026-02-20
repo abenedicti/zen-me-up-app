@@ -1,7 +1,11 @@
+.programs-session-content {
+  display: flex;
+  flex: 1;
+}
 .session-content p {
   cursor: pointer;
   border-radius: 20px;
-  padding: 20px;
+  padding: 50px 20px;
   font-size: 0.7rem;
   text-transform: uppercase;
   color: black;
@@ -12,20 +16,17 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 50px;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 .session-content {
-  background: url('https://res.cloudinary.com/duiastu2q/image/upload/v1771511623/session-bg_v12zcu.png')
-    center/cover;
+  background: url('../assets/bg.png') center/cover;
   filter: brightness(0.8);
   display: flex;
   flex-direction: column;
-
   gap: 20px;
-  height: 60vh;
 }
 .session-content p:first-child {
   /* background: url('../assets/bgSession1.jpg') center top; */
@@ -57,7 +58,7 @@
 }
 .session-content p:last-child {
   /* background: url('../assets/bgSession5.jpg') center/cover; */
-  border-radius: 550px;
+  border-radius: 850px;
   background: #060807;
   background: linear-gradient(
     2deg,

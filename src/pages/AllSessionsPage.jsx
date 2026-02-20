@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import '../pages/AllSessionsPage.css';
+import { PropagateLoader } from 'react-spinners';
 
 function AllSessions() {
   const [sessions, setSessions] = useState([]);
@@ -57,7 +58,9 @@ function AllSessions() {
     <div className="all-sessions">
       <h2>All sessions</h2>
       {loading ? (
-        <div className="spinner">Loading...</div>
+        <div className="spinner">
+          <PropagateLoader />
+        </div>
       ) : (
         <>
           <div className="filter-bar">

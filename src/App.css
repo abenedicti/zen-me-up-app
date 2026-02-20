@@ -2,28 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  text-align: center;
-  /* min-height: 60vh; */
-}
-html,
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  height: 100%;
-  font-family: 'Ysabeau Office', sans-serif;
-}
-
 li {
   text-decoration: none;
   color: inherit;
   list-style: none;
 }
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: 'Ysabeau Office', sans-serif;
+  overflow-x: hidden;
+}
+
 .app {
-  height: 60vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

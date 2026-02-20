@@ -5,7 +5,8 @@ import Programs from './pages/ProgramsPage';
 import Sessions from './pages/SessionsPage';
 import SessionDetails from './pages/SessionDetailsPage';
 import AllSessions from './pages/AllSessionsPage.jsx';
-import Search from './components/Search.jsx';
+import Footer from './components/Footer.jsx';
+import NotFoundPage from './pages/NotFoundPage.jsx';
 import './App.css';
 
 function App() {
@@ -19,7 +20,9 @@ function App() {
           <Route path="/programs/:programId/sessions" element={<Sessions />} />
           <Route path="/sessions" element={<AllSessions />} />
           <Route path="/sessions/:sessionId" element={<SessionDetails />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

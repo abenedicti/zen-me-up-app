@@ -7,6 +7,7 @@ import SessionReflection from '../components/SessionReflection';
 import '../pages/SessionDetailsPage.css';
 import Lottie from 'lottie-react';
 import monkey from '../assets/MeditatingMonkey.json';
+import { PropagateLoader } from 'react-spinners';
 
 function SessionsDetails() {
   const { sessionId } = useParams();
@@ -18,7 +19,12 @@ function SessionsDetails() {
       .then((response) => setSessionDetails(response.data))
       .catch((error) => console.log(error));
   }, [sessionId]);
-  if (!sessionDetails) return <p>Loading...</p>;
+  if (!sessionDetails)
+    return (
+      <p>
+        <PropagateLoader />
+      </p>
+    );
   return (
     <div className="page-content">
       <VideoPlayer session={sessionDetails} />
